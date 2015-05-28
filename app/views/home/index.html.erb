@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>APU LIFE</title>
+  </head>
+
+  <body bgcolor="#000000">
+    <div class="header">
+      <div class="header-left">OKINAWA LIFE</div>
+    </div>
+
+    <div class="main">
+      
+      
+     <div class="sidebar" style="float:left;">
+      <div class="menu">        
+        <ul>
+          <li><%= link_to "okinawa life", "/okinawalife" %></li>
+          <li><%= link_to "food", "/okinawafood" %></li>
+          <li><%= link_to "view", "/okinawaview" %></li>
+          <li><%= link_to "イケメン", "/okinawahandsome" %></li>
+          <li><%= link_to "美女", "/okinawabeauty" %></li>          
+        </ul>
+      </div>
+
+        <img src="sakusya.jpg">
+
+      <div class="introduce">
+        <ul>
+          <li>自己紹介<br>shigeso<br>沖縄出身<br>rails見習い<br>フロントエンド楽しい</li>
+
+        </ul>
+      </div>
+
+     </div>
+
+
+      <div class="contents" style="float:left;width:1000px;">
+        <div class="pictures">
+          <% @medias.each do |media| %>
+            <%= link_to media.link, :target => "_blank" do %>
+            <%= image_tag(media.images.low_resolution.url) %>
+            <% end %>
+          <% end %>
+
+          <% @users.each do |user| %>
+            <%= image_tag(user.images.low_resolution.url, width:'160px') %>
+          <% end %>
+        </div>
+        
+      </div>
+
+      <div class="snsmenus"></div>
+    </div>
+
+    <div class="footer"></div>
+  </body>
+</html>
+
+	
+	
+
+

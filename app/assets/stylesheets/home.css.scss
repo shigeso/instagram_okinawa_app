@@ -1,0 +1,89 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+@import "bootstrap";
+@import "font-awesome";
+
+
+.header{
+	background-image:url("海　沖縄.jpg");
+	height:600px;
+	width:950px;
+	margin:20px 0px 10px 100px;
+
+}
+.header-left{
+  float: left;
+  padding: 10px 60px;
+  color: #FF4500;
+  font-size: 120px;
+  font-style: italic;
+
+}
+
+.main{
+	width:1400px;
+	height:800px;
+	background-color:#000000;
+}
+
+.sidebar{
+  
+  height:700px;
+  width:200px;
+  clear:left;
+  padding:50px 20px;
+  font-size:18px;
+}
+img{
+	width:200px;
+	height:200px;
+	float:left;
+	padding:5px 5px;
+
+    
+}
+.pictures{
+
+}
+.menu li{
+	margin-bottom:10px;
+	padding:5px;
+	border-top: 3px solid #DDD;
+    border-left: 3px solid #DDD;
+    border-right: 3px solid #BBB;
+    border-bottom: 3px solid #BBB;
+    width: 120px;
+	color: #4169E1;
+	list-style: none;
+	float:left;
+	clear:left;
+	
+
+}
+.introduce{
+	float:left;
+	color:#00FFFF;
+	list-style: none;
+}
+
+.snsmenus{
+	width:200px;
+	height:200px;
+	background-color:#000000;
+
+}
+.html{
+	background-color:#000000;
+}
+
+
+.contents{
+	padding:10px;
+}
+
+
+
+
+
+
