@@ -7,16 +7,19 @@
 
 .header{
 	background-image:url("海　沖縄.jpg");
-	height:600px;
+	background-size:cover;
+	height:500px;
 	width:950px;
-	margin:20px 0px 10px 100px;
+	margin: 0 auto;
+	padding:200px 0px 100px 400px;
+	text-align:center;
 
 }
 .header-left{
   float: left;
   padding: 10px 60px;
-  color: #FF4500;
-  font-size: 120px;
+  color: #87CEEB;
+  
   font-style: italic;
 
 }
@@ -35,7 +38,7 @@
   padding:50px 20px;
   font-size:18px;
 }
-img{
+.pictures img{
 	width:200px;
 	height:200px;
 	float:left;
@@ -58,6 +61,7 @@ img{
 	list-style: none;
 	float:left;
 	clear:left;
+	border-radius:5px;
 	
 
 }
@@ -82,8 +86,44 @@ img{
 	padding:10px;
 }
 
+.footer{
+	height:600px;
+	padding-bottom:100px;
+	clear:left;
+}
 
+.heading{
+	color:white;
+	clear:left;
+	padding-top:100px;
+	padding-bottom:40px;
+	
+}
+.heading h2{
+	font-weight:bold;
+	text-align:center;
+}
 
+.purpose-icon{
+	float:left;
+	width:20%;
+}
 
+.info-title{
+	color:white;
+	border-bottom:3px solid #4169E1;
+	margin-left:20px;
+	margin-bottom:10px;
+}
 
+.info-explan{
+	color:white;
+	margin:10px;
+	padding:5px 20px;
+	
+}
+.tag-text{
+	color:#1E90FF;
+	font-size:30px;
+}
 

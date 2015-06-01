@@ -6,7 +6,12 @@
 
   <body bgcolor="#000000">
     <div class="header">
-      <div class="header-left">OKINAWA LIFE</div>
+      <div class="header-left">
+        <h1>OKINAWA LIFE</h1>
+        <p>
+          沖縄の魅力をインスタグラムを通じてみんなに知ってほしい！<br>下の説明と使用法もみてねー
+        </p>
+      </div>
     </div>
 
     <div class="main">
@@ -15,15 +20,13 @@
      <div class="sidebar" style="float:left;">
       <div class="menu">        
         <ul>
-          <li><%= link_to "okinawa life", "/okinawalife" %></li>
-          <li><%= link_to "food", "/okinawafood" %></li>
-          <li><%= link_to "view", "/okinawaview" %></li>
-          <li><%= link_to "イケメン", "/okinawahandsome" %></li>
-          <li><%= link_to "美女", "/okinawabeauty" %></li>          
+          <% @themes.each do |theme| %>
+          <li><%= link_to theme.name, theme.tag %></li>
+          <% end %>      
         </ul>
       </div>
 
-        <img src="sakusya.jpg">
+        <%= image_tag "sakusya.jpg",size:'60x60'%>
 
       <div class="introduce">
         <ul>
@@ -53,7 +56,47 @@
       <div class="snsmenus"></div>
     </div>
 
-    <div class="footer"></div>
+    <div class="footer">
+
+      <div class="heading">
+        <h2>ハッシュタグの説明と使用法</h2>
+      </div>
+
+      <div class="purposes">
+
+        <div class="purpose">
+          <div class="purpose-icon">
+            <h4 class="info-title">okinawa life<h4>
+            <p class="info-explan">沖縄での日常をパシャッとしてハッシュタグ<span class="tag-text">#okinawalife</span></br>沖縄在住の人の日常がみたい！</p>
+          </div>
+        </div>
+
+        <div class="purpose">
+          <div class="purpose-icon">
+            <h4 class="info-title">okinawa food<h4>
+            <p class="info-explan">沖縄の食べ物をパッシャっと県内外の人にインスタでここめちゃうまいよって場所を伝えましょう。</br>
+              ハッシュタグ<span class="tag-text">#okinawafood</span>です!</p>
+          </div>
+        </div>
+
+        <div class="purpose">
+          <div class="purpose-icon">
+            <h4 class="info-title">okinawa view<h4>
+            <p class="info-explan">沖縄の大好きな景色をパシャッと。思い切ってここどこですか？と聞いてみよう。県内外にすんでる人たちに自分の大好きな景色を伝えましょう！</br>ハッシュタグ<span class="tag-text">#okinawaview</span>です！</p>
+          </div>
+        </div>
+
+        <div class="purpose">
+          <div class="purpose-icon">
+            <h4 class="info-title">okinawa beauty and handsome<h4>
+            <p class="info-explan">沖縄の美男、美女を共有！友達をパシャッと。いやみんなみたいでしょ。私はみたい。県外にいる沖縄県人でも全然okです。ハッシュタグ<span class="tag-text">#okinawabeuty</span>,<span class="tag-text"><br>#okinawahandsome</span>です！</br></p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+      
+    </div>
   </body>
 </html>
 
