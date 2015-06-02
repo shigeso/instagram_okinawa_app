@@ -17,16 +17,3 @@
 //= require_tree .
 //= require bootstrap-sprockets-custom
 
-var userFeed = new Instafeed({
-  get: 'shigely', 
-  userId:  670311557, 
-  accessToken: '670311557.467ede5.02ffb4e87628491fbfeca1cee19b8d29', 
-  limit: 10, 
-  sortBy: "random", 
-  template: '<li><a href="{{link}}" target="_blank"><img src="{{image}}" alt="{{caption}}"></a></li>',
-  after: function() {
-    $('#scroller ul').simplyScroll();
-  },
-});
-<p></p>
-userFeed.run();
